@@ -49,8 +49,11 @@ section {
 }
 img {
   border-radius: 100%;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, transform 0.1s ease-in-out;
 }
 img:hover {
   background-color: rgb(100, 100, 100);
+}
+.rotateIcon {
+  transform: rotate(180deg);
 }

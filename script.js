@@ -1,10 +1,6 @@
 const accordion = document.querySelector(".accordion");
 function changeIcon(element) {
-  if (element.getAttribute("src") === "up.svg") {
-    element.setAttribute("src", "down.svg");
-  } else {
-    element.setAttribute("src", "up.svg");
-  }
+  element.classList.toggle("rotateIcon");
 }
 accordion.addEventListener("click", function (event) {
   if (event.target.tagName === "IMG") {
